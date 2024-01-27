@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="css/text" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="nav navbar bg-body-tertiary">
+        <i class="bi bi-instagram">
+            Instagram
+        </i>
+
+<!-------- Boton modal ------->
+    <div class=" nav navbar d-flex align-content-end">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new Post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5> Caption:</h5>
+                    <textarea class="form-control" placeholder="add the post of your caption here"></textarea>
+                    <div class="container">
+                        <i class="bi bi-camera"></i>
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Publish</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-----boton dropdown ------>
+         <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear"></i>
+            </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+    </div>
+    </div>
+</div>
+
+
+
+<!---------------AQUI EMPIEZA LOS ICONOS PARA LAS FOTOS---------->
+<nav>
+    <div class="container-md nav  justify-content-center mb-3">
+        <button class="nav-link" id="grid" data-bs-toggle="tab" data-bs-target="#nav-grid" type="button" role="tab" aria-controls="nav-grid">
+            <i class="bi bi-grid-3x3"></i>
+        </button>
+        <button class="nav-link" id="square" data-bs-toggle="tab" data-bs-target="#nav-square" type="button" role="tab" aria-controls="nav-square">
+            <i class="bi bi-square-fill"></i>
+        </button>
+    </div>
+</nav>
+<!-------aqui empieza el contenido de los botones pill--------->
+<div class="container nav justify-content-center">
+    <div class="tab-content" id="nav-tabContent ">
+
+<!-----------------GRID DE LAS FOTOS 3X3--------------------------------->
+        <div class="tab-pane fade show active" id="nav-grid" role="tabpanel" aria-labelledby="nav-grid" tabindex="0">
+            <div class="row">
+                <div class="col-4 mb-3">
+                    <img src="https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg" width="230" height="220">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg" width="230" height="220">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg" width="230" height="220">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 mb-3">
+                    <img src="https://images.pexels.com/photos/718952/pexels-photo-718952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="230" height="220">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://images.pexels.com/photos/19400415/pexels-photo-19400415/free-photo-of-nieve-vuelo-paisaje-montanas.jpeg" width="230" height="220">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://images.pexels.com/photos/19988878/pexels-photo-19988878.jpeg" width="230" height="220">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" width="230" height="220">
+                </div>
+                <div class="col-4">
+                    <img src="https://images.pexels.com/photos/1187317/pexels-photo-1187317.jpeg" width="230" height="220">
+                </div>
+                <div class="col-4">
+                    <img src="https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg" width="230" height="220">
+                </div>
+            </div>
+        </div>
+<!---------FORMATO LINEAL DE LAS FOTOS -------->
+        <div class="tab-pane fade show" id="nav-square" role="tabpanel" aria-labelledby="nav-square" tabindex="0">
+ <!--Inicio de la primera foto-->           
+            <div class="container border rounded-1 mb-3">
+                <div class="header">
+                    <div class="row mb-2">
+                        <div class="col-10">
+                            Mi perro riendo jajaj
+                        </div>
+                       <div class="col-2"> 8/26</div>
+                    </div>
+                </div>
+                <div class="body">
+                    <img src="https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg" width="400" height="300">
+                </div>
+                <div class="footer">
+                    <b>204 likes</b>
+                    <p>
+                        una foto digna de postear
+                    </p>
+                </div>
+            </div>
+<!------fin de la primera foto-->
+
+<!--Inicio de la segunda foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                Un viaje no cae mal
+            </div>
+           <div class="col-2"> 123/986</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>204 likes</b>
+        <p>
+            Si señor de paseo por el mundo
+        </p>
+    </div>
+</div>
+<!------fin de la segunda foto-->
+
+<!--Inicio de la tercera foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                Que mas se puede pedir
+            </div>
+           <div class="col-2"> 128/56</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>204 likes</b>
+        <p>
+            RELAX-----PEACE!!!!!
+        </p>
+    </div>
+</div>
+<!------fin de la tercera foto-->
+
+<!--Inicio de la  cuarta foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                Mi DEPORTE FAVORITO
+            </div>
+           <div class="col-2"> 1k/165</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/718952/pexels-photo-718952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>804 likes</b>
+        <p>
+            !!! GO KINGS ¡¡¡
+        </p>
+    </div>
+</div>
+<!------fin de la cuarta  foto-->
+
+<!--Inicio de la  quinta foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                Something extreme
+            </div>
+           <div class="col-2"> 1k/745</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/19400415/pexels-photo-19400415/free-photo-of-nieve-vuelo-paisaje-montanas.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>204 likes</b>
+        <p>
+            yeap woooooo¡¡¡¡¡
+        </p>
+    </div>
+</div>
+<!------fin de la quinta  foto-->
+
+<!--Inicio de la sexta foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+               snow Concert yeeesssss
+            </div>
+           <div class="col-2"> 26/26</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/19988878/pexels-photo-19988878.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>254 likes</b>
+        <p>
+            viva el rock and roll
+        </p>
+    </div>
+</div>
+<!-----fin de la sexta foto-->
+
+<!--Inicio de la septima foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                haciendo lo que mas me gusta
+            </div>
+           <div class="col-2"> 3k/1k6</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>1204 likes</b>
+        <p>
+            Otra foto digna de postear :)-
+        </p>
+    </div>
+</div>
+<!-----fin de la septima foto-->
+
+<!--Inicio de la octava foto-->
+<div class="container border rounded-1 mb-3">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                Un cafe de Colombia
+            </div>
+           <div class="col-2"> 8/26</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/1187317/pexels-photo-1187317.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>456 likes</b>
+        <p>
+            haaaa que rico !!!!
+        </p>
+    </div>
+</div>
+<!-----fin de la octava foto-->
+
+<!--Inicio de la novena foto-->
+<div class="container border rounded-1">
+    <div class="header">
+        <div class="row mb-2">
+            <div class="col-10">
+                Desayuno en la cama 
+            </div>
+           <div class="col-2"> 8/26</div>
+        </div>
+    </div>
+    <div class="body">
+        <img src="https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg" width="400" height="300">
+    </div>
+    <div class="footer">
+        <b>704 likes</b>
+        <p>
+            Gracias vida mia 
+        </p>
+    </div>
+</div>
+<!-----fin de la novena foto-->
+
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
